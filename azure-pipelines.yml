@@ -10,12 +10,12 @@ pool:
   vmImage: ubuntu-latest
 
 variables:
-  webAppName: '<Name of your webapp>'
-  serviceConnection: '<Name of your webARM Service connection>'
-  azureSubscriptionId: '<Azure subscriptionId>'
-  loadTestResource: '<Name of your load test resource>'
-  loadTestResourceGroup: '<Name of your load test resource group>'
-  location: 'EAST US'
+  webAppName: 'csrloadtestad'
+  serviceConnection: $(armServiceConnection)
+  azureSubscriptionId: $(subscriptionID)
+  loadTestResource: 'csrloadtest'
+  loadTestResourceGroup: 'csr-load-test-rg'
+  location: 'UK SOUTH'
 
 
 stages:
