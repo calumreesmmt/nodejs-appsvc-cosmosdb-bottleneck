@@ -13,7 +13,7 @@ variables:
   webAppName: 'csrloadtestad'
   loadTestResource: 'csrloadtest'
   loadTestResourceGroup: 'csr-load-test-rg'
-  location: 'europe west'
+  location: 'westeurope'
 
 
 stages:
