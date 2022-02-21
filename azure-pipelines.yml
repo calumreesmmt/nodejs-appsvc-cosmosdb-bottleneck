@@ -133,11 +133,11 @@ stages:
         subscriptionId: $(azureSubscriptionId)
         action: 'Create Or Update Resource Group'
         resourceGroupName: $(loadTestResourceGroup)
-        location: '$(location)'
+        location: 'northeurope'
         templateLocation: 'Linked artifact'
         csmFile: '$(System.DefaultWorkingDirectory)/ARMTemplate/template.json'
         csmParametersFile: '$(System.DefaultWorkingDirectory)/ARMTemplate/parameters.json'
-        overrideParameters: '-name $(loadTestResource) -location "$(location)"'
+        overrideParameters: '-name $(loadTestResource) -location "northeurope"'
         deploymentMode: 'Incremental'    
     
     - task: AzureLoadTest@1
