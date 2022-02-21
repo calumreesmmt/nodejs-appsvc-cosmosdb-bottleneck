@@ -11,8 +11,6 @@ pool:
 
 variables:
   webAppName: 'csrloadtestad'
-  serviceConnection: $(armServiceConnection)
-  azureSubscriptionId: $(subscriptionID)
   loadTestResource: 'csrloadtest'
   loadTestResourceGroup: 'csr-load-test-rg'
   location: 'UK SOUTH'
